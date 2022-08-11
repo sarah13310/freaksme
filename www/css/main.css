@@ -3,7 +3,7 @@
 
 html, body {
     color: whitesmoke;
-    left: 0px;
+    left: 0;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -11,7 +11,7 @@ html, body {
     overflow: hidden;
     background: #020B0A url("../img/freaks2.jpg") no-repeat;
     background-size: cover;
-    font: 5vw/100vh "Finger Paint";
+    font: 5vw/100vh "Montserrat";
 }
 
 
@@ -33,7 +33,7 @@ ul{
     left:50px;
     width: 100%;
     height: 100vh;
-    font: 28px "Montserrat";
+    font: 26px "Montserrat";
 }
 
 li:first-child{
