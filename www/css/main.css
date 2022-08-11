@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat);
+
+html, body {
+    color: whitesmoke;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #020B0A url("../img/freaks2.jpg") no-repeat;
+    background-size: cover;
+    font: 5vw/100vh "Finger Paint";
+}
+
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.title_site {
+    position: relative;
+    margin-top: -200px;
+    margin-left: 600px;
+}
+
+.menu {
+    color:#2F5150;
+    position: absolute;
+    top:0;
+    left:50px;
+    width: 100%;
+    height: 100vh;
+    font: 28px "Montserrat";
+}
+
+li:first-child{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+a:link {text-decoration: none; color: #2F5150;}
+a:visited {text-decoration: none; color: rgb(65, 108, 107);}
+a:hover {text-decoration: none; color: rgb(102, 141, 137);}
+a:active {text-decoration: none; color: rgba(173, 224, 126, 0.92);}
+
