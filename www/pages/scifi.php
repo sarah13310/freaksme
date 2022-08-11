@@ -12,7 +12,7 @@
 </div>
 <div class="menu">
     <ul class="item">
-        <li ><a href="" style="color:whitesmoke">Genre</a></li>
+        <li ><a href="../index.php" style="color:whitesmoke">Genre</a></li>
         <li><a href="../pages/fantastic.php">Fantastique</a></li>
         <li><a href="../pages/horror.php">Horreur</a></li>
         <li><a href="../pages/scifi.php">Sci-fi</a></li>
