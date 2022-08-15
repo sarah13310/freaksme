@@ -1,0 +1,13 @@
+:root {
+    --main-color: whitesmoke;
+    --selected-color:#95CCC6FF;
+    --active-color:#416C6BFF;
+    --link-color:#2F5150;
+    --hover-color: #a4dad4;
+    --validate-color: #ADE07EEA;
+    --bg-color:#020B0A;
+    --shadow-color:#020B0A;
+    --shadow-text: #0000003D;
+    --offset-plan:112px;
+    --offset-plan-n:-112px;
+}
