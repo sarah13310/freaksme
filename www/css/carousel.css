@@ -14,7 +14,7 @@ html body{
     font: 22px "Montserrat";
 }
 
-.menu ul{
+ul.menu {
     text-decoration: none;
     list-style-type:none;
 }
@@ -23,6 +23,7 @@ html body{
     color: whitesmoke;
     font-size: 30px;
 }
+
 .menu li a:link {text-decoration: none; color:#2F5150FF;}
 .menu li a:visited {text-decoration: none; color:#416C6BFF;}
 .menu li a:hover {text-decoration: none; color:#A4DAD4FF; transition: all 1s ;}
@@ -51,7 +52,6 @@ html body{
 
 .carousel-control-next, .carousel-control-prev {
     width: 30px;
-
 }
     /* Declare heights because of positioning of img element */
 .carousel-item {

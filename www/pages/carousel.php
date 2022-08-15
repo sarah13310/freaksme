@@ -6,7 +6,7 @@
     <title>Freaks</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
 </head>
 <body>
 <div class="title_site">
@@ -20,7 +20,7 @@
         <li><a href="">Horreur</a></li>
         <li><a href="">Sci-fi</a></li>
         <li><a href="">&nbsp</a></li>
-        <li><a href="pages/contact.php">Nous contacter</a></li>
+        <li><a href="contact.php">Nous contacter</a></li>
     </ul>
 </div>
 
@@ -32,7 +32,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-img">
-                                <img src="img/freaks2.jpg" class="img-fluid">
+                                <img src="../img/freaks2.jpg" class="img-fluid">
                             </div>
                             <div class="card-img-overlay">Slide 1</div>
                         </div>
@@ -42,7 +42,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-img">
-                                <img src="img/grudge_1.jpg" class="img-fluid">
+                                <img src="../img/grudge_1.jpg" class="img-fluid">
                             </div>
                             <div class="card-img-overlay">Slide 2</div>
                         </div>
@@ -52,7 +52,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-img">
-                                <img src="img/Fright-Night-1985.jpg" class="img-fluid">
+                                <img src="../img/Fright-Night-1985.jpg" class="img-fluid">
                             </div>
                             <div class="card-img-overlay">Slide 3</div>
                         </div>
@@ -62,7 +62,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-img">
-                                <img src="img/the_blob.jpg" class="img-fluid">
+                                <img src="../img/the_blob.jpg" class="img-fluid">
                             </div>
                             <div class="card-img-overlay">Slide 4</div>
                         </div>
@@ -72,7 +72,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-img">
-                                <img src="img/constantine.jpg" class="img-fluid">
+                                <img src="../img/constantine.jpg" class="img-fluid">
                             </div>
                             <div class="card-img-overlay">Slide 5</div>
                         </div>
@@ -82,7 +82,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-img">
-                                <img src="img/thor3.jpg" class="img-fluid">
+                                <img src="../img/thor3.jpg" class="img-fluid">
                             </div>
                             <div class="card-img-overlay">Slide 6</div>
                         </div>
@@ -100,6 +100,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-<script src="js/scripts.js" type="text/javascript"></script>
+<script src="../js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
