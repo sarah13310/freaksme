@@ -1,6 +1,7 @@
 
 <?php include_once 'pages/functions.php';
 exist_active();?>
+<div class="menu">
 <ul style='text-decoration:none;list-style-type:none;'>
     <li><a href='' style='color:whitesmoke'>Genre</a></li>
     <li><a href=''>&nbsp</a></li>

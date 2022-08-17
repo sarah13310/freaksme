@@ -11,5 +11,4 @@
         <li><a href=''>&nbsp</a></li>
         <li><a <?= set_Selected($_GET["active"],4)?> href='contact.php?active=4' >Nous contacter</a></li>
     </ul>
-
 </div>

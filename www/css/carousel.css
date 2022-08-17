@@ -99,12 +99,28 @@ ul.menu {
     object-fit:cover;
 }
 @media (max-width: 767px) {
+    .carousel{
+        position: fixed;
+        bottom: 5px;
+        left: 0;
+        height: 60%;
+        width: 95%;
+    }
     .carousel-inner .carousel-item > div {
         display: none;
     }
     .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
+    .menu{
+        width: 50%;
+        font-size: 14px;
+    }
+    .menu li:first-child{
+        color: whitesmoke;
+        font-size: 18px;
+    }
+
 }
 
 .carousel-inner .carousel-item.active,
