@@ -1,5 +1,5 @@
 <?php include_once 'functions.php' ?>
-<div class='container text-center my-3'>
+<div class='help-container text-center my-3'>
     <div class='row mx-auto my-auto justify-content-center'>
         <div id='recipeCarousel' class='carousel slide' data-bs-ride='carousel'>
             <div class='carousel-inner' role='listbox'>

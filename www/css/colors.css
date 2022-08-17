@@ -2,11 +2,13 @@
     --main-color: whitesmoke;
     --selected-color:#95CCC6FF;
     --active-color:#416C6BFF;
-    --link-color:#2F5150;
+    --medium-color:#2F5150;
+    --bg-color: #101818;
     --hover-color: #a4dad4;
     --validate-color: #ADE07EEA;
     --bg-color:#020B0A;
     --shadow-color:#020B0A;
+    --medium-gray: #6e707e;
     --shadow-text: #0000003D;
     --offset-plan:112px;
     --offset-plan-n:-112px;

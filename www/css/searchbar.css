@@ -1,0 +1,214 @@
+.searchbar {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+}
+
+.sbx-amazon__wrapper {
+    position: absolute;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 38px;
+}
+
+.sbx-custom__input {
+    width: 100%;
+    -webkit-transition: box-shadow .4s ease, background .4s ease;
+    transition: box-shadow .4s ease, background .4s ease;
+    border: 0;
+    border-radius: 19px;
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+    background: #FFFFFF;
+    padding: 0 45px 0 55px;
+    height: 100%;
+    vertical-align: middle;
+    white-space: normal;
+    font-size: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.sbx-custom__input::-webkit-search-decoration, .sbx-custom__input::-webkit-search-cancel-button, .sbx-custom__input::-webkit-search-results-button, .sbx-custom__input::-webkit-search-results-decoration {
+    display: none;
+}
+
+.sbx-custom__input:hover {
+    box-shadow: inset 0 0 0 1px #e6e6e6;
+}
+
+.sbx-custom__input:focus, .sbx-custom__input:active {
+    outline: 0;
+    box-shadow: inset 0 0 0 1px #35d5b8;
+    background: #FFFFFF;
+}
+
+.sbx-custom__input::-webkit-input-placeholder {
+    color: #AAAAAA;
+}
+
+.sbx-custom__input::-moz-placeholder {
+    color: #AAAAAA;
+}
+
+.sbx-custom__input:-ms-input-placeholder {
+    color: #AAAAAA;
+}
+
+.sbx-custom__input::placeholder {
+    color: #AAAAAA;
+}
+
+.sbx-custom__submit:hover {
+    color: rgba(33, 47, 17, 0.92);
+}
+
+.sbx-custom__submit {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0 18px 18px 0;
+    background: linear-gradient(rgb(65 210 210), rgb(8, 112, 112));
+    padding: 0;
+    width: 46px;
+    height: 101%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sbx-custom__filter {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 18px 0 0 18px;
+    background: linear-gradient(rgb(65 210 210), rgb(8, 112, 112));
+    padding: 0;
+    width: 46px;
+    height: 101%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sbx-custom__submit::before {
+    display: inline-block;
+    margin-right: -4px;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+.sbx-custom__submit:hover, .sbx-custom__submit:active {
+    cursor: pointer;
+}
+
+.sbx-custom__submit:focus {
+    outline: 0;
+}
+
+.sbx-custom__submit svg {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    fill: #0B6044;
+}
+
+.sbx-custom__submit svg:hover {
+    fill: #032319;
+}
+
+.sbx-custom__filter svg {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    fill: #0B6044;
+}
+
+.sbx-custom__filter svg:hover {
+    fill: #032319;
+}
+
+.sbx-custom__reset {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 50px;
+    margin: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    fill: rgb(25 53 54 / 73%);
+}
+
+.sbx-custom__reset:focus {
+    outline: 0;
+}
+
+.sbx-custom__reset svg {
+    display: block;
+    margin: 4px;
+    width: 13px;
+    height: 13px;
+}
+
+.sbx-custom__input:valid ~ .sbx-custom__reset {
+    display: block;
+    -webkit-animation-name: sbx-reset-in;
+    animation-name: sbx-reset-in;
+    -webkit-animation-duration: .15s;
+    animation-duration: .15s;
+}
+
+@-webkit-keyframes sbx-reset-in {
+    0% {
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes sbx-reset-in {
+    0% {
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.category {
+    padding-bottom: 5px;
+    margin-left: 71px;
+    color: #28a7a785;
+}
+
+.cat_title{
+    color: rgba(88, 250, 250, 0.52);
+}

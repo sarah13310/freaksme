@@ -1,61 +1,220 @@
-@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat);
 
-html, body {
-    color: whitesmoke;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    background: #020B0A url("../img/freaks2.jpg") no-repeat;
+html body {
+    background: #020B0AFF url("../img/freaks2.jpg") no-repeat;
     background-size: cover;
-    font: 5vw/100vh "Montserrat";
-}
-
-
-ul{
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.title_site {
-    position: relative;
-    margin-top: -200px;
-    margin-left: 600px;
 }
 
 .menu {
-    color:#2F5150;
-    position: absolute;
-    top:0;
-    left:0;
-    width: 400px;
-    height: 250px;
-    font: 24px "Montserrat";
-}
-
-li:first-child{
-    color: whitesmoke;
-    font-size: 30px;
-}
-
-a:link {text-decoration: none; color: #101a1a;}
-a:visited {text-decoration: none; color: rgb(65, 108, 107);}
-a:hover {text-decoration: none; color: rgb(149, 204, 198); transition: all 1s ;}
-a:active {text-decoration: none; color: rgba(173, 224, 126, 0.92);}
-
-
-img{
-    width: 300px;
-    height: 200px;
-}
-
-.carousel-inner{
+    opacity: 0;
+    color: #2F5154;
     position: relative;
+    top: 48px;
+    left: -25px;
+    margin-left: 70px;
+    width: 453px;
+    height: 0;
+    font: 18px "Montserrat";
+    background: #2f51501a;
+    padding: 10px 0;
+    border-radius: 0 0 20px 20px;
+    transition: all 1s;
+    transform: scale(100%, 0);
+}
+
+.menu.active {
+    position: relative;
+    top: 0;
     left: 0;
-    bottom:0;
+    opacity: 1;
+    height: 120px;
+    width: 435px;
+    transition: all 0.6s;
+    transform: scale(100%);
+}
+
+a.space-h {
+    color: transparent;
+    text-decoration: none;
+    line-height: 0;
+}
+
+ul.menu {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li.menu:first-child {
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+
+li:last-child {
+    line-height: 0;
+}
+
+.menu li a:link {
+    text-decoration: none;
+    color: #2F5150FF;
+}
+
+.menu li a:visited {
+    text-decoration: none;
+    color: #416C6BFF;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #A4DAD4FF;
+    transition: all 1s;
+}
+
+.menu li a:active {
+    text-decoration: none;
+    color: #ADE07EEA;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: absolute;
     width: 100%;
+    bottom: 0;
+    padding: 25px 25px 25px 25px;
+}
+
+/* Carousel base class */
+.carousel {
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 1rem;
+    z-index: 10;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 30px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.card {
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden;
+    color: var(--main-color);
+    text-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.card:hover {
+    color: whitesmoke;
+    background: linear-gradient(#416C6BFF, #95CCC6FF);
+    border: solid 2px rgb(149, 204, 198);
+    border-radius: 10px;
+    padding: 0;
+}
+
+.card-img-overlay {
+    color: rgba(245, 245, 245, 0.70);
+    text-shadow: #060a0a 2px 2px 2px;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.card-img-overlay:hover {
+    color: white;
+    text-shadow: #060a0a 2px 4px 2px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.carousel-item > img {
+    position: absolute;
+    background-color: rgba(2, 11, 10, 0.21);
+    top: 0;
+    left: 0;
+    min-width: 100%;
     height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        position: fixed;
+        bottom: 5px;
+        left: 0;
+        height: 60%;
+        width: 95%;
+    }
+
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .menu {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .menu li:first-child {
+        color: whitesmoke;
+        font-size: 18px;
+    }
+
+    a.space-h {
+        font-size: 10px;
+        color: transparent;
+        text-decoration: none;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.login-menu {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-right: 3px;
+    margin-left: 3px;
+    border: 1px solid rgba(245, 245, 245, 0.13);
+    height: 80px;
 }

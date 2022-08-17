@@ -8,11 +8,24 @@ function exist_active():bool{
     return false;
 }
 
+function category_selected($item):string
+{
+    $cat="";
+    if ($item=="1"){
+        $cat="Fantastique";
+    }
+    if ($item=="2"){
+        $cat="Horreur";
+    }
+    if ($item=="3"){
+        $cat="Sci-fi";
+    }
+    return $cat;
+}
 
 function set_Selected($active,$item):string
 {
     $selected = "<a style='color:#95CCC6FF'";
-
 
     if ($active == $item) {
         return $selected;
@@ -23,7 +36,6 @@ function set_Selected($active,$item):string
 
 function create_item_carousel($url_image, $title, $active=false):string
 {
-
     if ($active){
         $text="<div class='carousel-item active'>";
     }
