@@ -10,15 +10,12 @@
     <link href="css/searchbar.css" rel="stylesheet">
 </head>
 <body>
-<div class="title_site">
-    <span>F</span><span>R</span><span>E</span><span>A</span><span>K</span><span>S</span>
-</div>
 <?php
 $_GET["active"] = 0;
 $GLOBALS["root"] = true;
 include_once("pages/functions.php");
+include_once("pages/compo_navbar.php");
 include_once("menu.php");
-include_once("searchbar.php");
 include_once("pages/compo_carousel.php");
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

@@ -2,7 +2,6 @@
 
 function exist_active(): bool
 {
-
     if (isset($_GET['active'])) {
         return true;
     }
@@ -12,6 +11,10 @@ function exist_active(): bool
 function category_selected($item): string
 {
     $cat = "";
+
+    if ($item == "0") {
+        $cat = "Toutes";
+    }
     if ($item == "1") {
         $cat = "Fantastique";
     }
@@ -75,10 +78,11 @@ function generate_menu_links(): void
 {
     $index = 0;
     $links_menu = [
-        "Fanstastique" => "fantastic.php?active=1",
+        "Toutes"=>"index.php",
+        "Fantastique" => "fantastic.php?active=1",
         "Horreur" => "horror.php?active=2",
         "Sci-fi" => "scifi.php?active=3",
-        "Nous Contacter" => "scifi.php?contact=4",
+        "Nous Contacter" => "contact.php?contact=4",
     ];
     $path_root="";
     if ($GLOBALS['root']){
@@ -86,7 +90,12 @@ function generate_menu_links(): void
     }
 
     foreach ($links_menu as $name=>$link) {
+        if ($index==0){
+            echo "<li><a href='$link'>$name</a></li>";
+        }
+        else{
+            echo "<li><a href='$path_root$link'>$name</a></li>";
+        }
         $index++;
-        echo "<li><a href='$path_root$link'></a>{$name}</li>";
     }
 }

@@ -12,6 +12,7 @@
 <body>
 <?php
 $_GET["active"] = 3;
+$GLOBALS["root"] = false;
 include_once("functions.php");
 include_once ("compo_navbar.php");
 include_once ("main_menu.php");

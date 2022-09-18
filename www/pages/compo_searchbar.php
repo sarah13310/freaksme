@@ -1,5 +1,3 @@
-<?php include_once '../pages/functions.php';
-exist_active(); ?>
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-5" viewBox="0 0 40 41">
         <path d="M25.098 27.967c-2.63 2.023-5.925 3.227-9.5 3.227C6.982 31.194 0 24.21 0 15.597S6.983 0 15.597 0s15.597 6.983 15.597 15.597c0 4.106-1.587 7.842-4.18 10.627l1.343 1.344.025-.025c.78-.778 2.043-.775 2.822.004l7.814 7.813c.78.78.78 2.047.004 2.823l-1.88 1.878c-.777.78-2.042.777-2.82-.002l-7.815-7.814c-.78-.78-.78-2.046-.003-2.822l.024-.025-1.43-1.43zm-9.5.627c7.177 0 12.996-5.82 12.996-12.997 0-7.178-5.82-12.998-12.997-12.998C8.42 2.6 2.6 8.42 2.6 15.596c0 7.178 5.82 12.997 12.997 12.997z"
@@ -36,7 +34,7 @@ exist_active(); ?>
         </button>
     </div>
 </form>
-</div>
+
 <script type="text/javascript">
     document.querySelector('.searchbox [type="reset"]').addEventListener('click', function () {
         this.parentNode.querySelector('input').focus();

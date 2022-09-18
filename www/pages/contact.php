@@ -13,7 +13,8 @@
 <body>
 <?php
 $_GET['active'] = 4;
-include_once("functions.php");
+$GLOBALS["root"] = false;
+require_once("functions.php");
 include_once ("compo_navbar.php");
 include_once("main_menu.php");
 include_once("compo_help.php");

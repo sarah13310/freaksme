@@ -1,11 +1,13 @@
 .searchbar {
-    margin-left: 25px;
+    width: 100%;
     margin-right: 25px;
     display: flex;
 }
 
 .sbx-amazon__wrapper {
-    position: absolute;
+    display: flex;
+    position: relative;
+    left: 40px;
     width: 100%;
     min-width: 300px;
     max-width: 500px;
@@ -13,6 +15,7 @@
 }
 
 .sbx-custom__input {
+    display: flex;
     width: 100%;
     -webkit-transition: box-shadow .4s ease, background .4s ease;
     transition: box-shadow .4s ease, background .4s ease;
@@ -204,8 +207,9 @@
 }
 
 .category {
+    width: 25%;
     padding-bottom: 5px;
-    margin-left: 71px;
+    margin-left: 40px;
     color: #28a7a785;
 }
 
