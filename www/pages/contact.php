@@ -9,6 +9,7 @@
     <link href="../css/help.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/searchbar.css" rel="stylesheet">
+    <link href="../css/google.css" rel="stylesheet">
 </head>
 <body>
 <?php
@@ -19,6 +20,8 @@ include_once ("compo_navbar.php");
 include_once("main_menu.php");
 include_once("compo_help.php");
 include_once ("contact_mail.php");
+include_once ("compo_google.php");
+
 ?>
 <script src="../js/menu.js" type="text/javascript"></script>
 <script src="../js/help.js" type="text/javascript"></script>
